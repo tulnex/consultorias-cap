@@ -1,0 +1,10 @@
+---
+const { href, class: className } = Astro.props;
+---
+
+<div class="group relative">
+    <a href={href} class={`${className} capitalize`}>
+        <slot />
+    </a>
+    <span class="absolute inset-x-0 h-0.5 group-hover:bg-indigo-500 transition-all duration-500 -bottom-0.5"></span>
+</div>
