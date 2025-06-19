@@ -68,3 +68,14 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.541 0.281 293.009);
 }
+
+.pseudo::before {
+  content: "";
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 20%;
+  height: 5%;
+  transform: translate(40%, 0%) rotate(-45deg);
+  background: #7d4a6b;
+}

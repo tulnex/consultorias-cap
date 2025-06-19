@@ -2,29 +2,31 @@
 import NavLink from "../NavLink.astro";
 ---
 
-<nav class="container mx-auto">
-    <div class="flex justify-between py-6">
-        <a href="/">
-            <h1 class="">
-                Logo
-            </h1>
-        </a>
-        <ul class="flex gap-8">
-            <li>
-                <NavLink href="/">inicio</NavLink>
-            </li>
-            <li>
-                <NavLink href="/">quienes somos</NavLink>
-            </li>
-            <li>
-                <NavLink href="/nuestros-servicios">nuestros servcicios</NavLink>
-            </li>
-            <li>
-                <NavLink href="/nuestros-servicios">soluciones</NavLink>
-            </li>
-            <li>
-                <NavLink href="/">contacto</NavLink>
-            </li>
-        </ul>
-    </div>
-</nav>
+<div class="sticky top-0 z-50 bg-white/30 backdrop-blur-sm">
+    <nav class="container mx-auto">
+        <div class="flex justify-between py-6">
+            <a href="/">
+                <h1 class="font-bold text-xl text-[#7d4a6b]">
+                    Consultorias Capital
+                </h1>
+            </a>
+            <ul class="flex gap-8">
+                <li>
+                    <NavLink href="/">inicio</NavLink>
+                </li>
+                <li>
+                    <NavLink href="/quienes-somos">quienes somos</NavLink>
+                </li>
+                <li>
+                    <NavLink href="/nuestros-servicios">nuestros servcicios</NavLink>
+                </li>
+                <li>
+                    <NavLink href="/nuestros-servicios">soluciones</NavLink>
+                </li>
+                <li>
+                    <NavLink href="/">contacto</NavLink>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
