@@ -6,6 +6,7 @@ import BusinessLineCard from '@/components/BusinessLineCard.astro';
 import NavBar from '@/components/layout/NavBar.astro';
 import BentoItem from '@/components/BentoItem.astro';
 import Footer from '@/components/layout/Footer.astro';
+import Services from '@/components/services.tsx';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
@@ -48,41 +49,7 @@ import Footer from '@/components/layout/Footer.astro';
 					</div>
 				</div>
 			</section>
-			<section class="grid grid-cols-1 md:grid-cols-3 gap-16 items-center py-12 lg:pt-24 lg:pb-28 w-full">
-				<div class="flex flex-col md:flex-row w-full rounded-xl overflow-hidden border-slate-200 border-[.5px]">
-					<div class="relative w-2/5">
-						<img src="" alt="" class="w-full h-[250px] bg-black" />
-						<span class="absolute top-1 left-1 text-white text-xl bg-slate-400 rounded-lg px-4">
-							P&C
-						</span>
-					</div>
-					<p class="p-8 w-3/5 font-bold text-2xl flex items-center">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					</p>
-				</div>
-				<div class="flex flex-col md:flex-row w-full rounded-xl overflow-hidden border-slate-200 border-[.5px]">
-					<div class="relative w-2/5">
-						<img src="" alt="" class="w-full h-[250px] bg-black" />
-						<span class="absolute top-1 left-1 text-white text-xl bg-slate-400 rounded-lg px-4">
-							P&C
-						</span>
-					</div>
-					<p class="p-8 w-3/5 font-bold text-2xl flex items-center">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					</p>
-				</div>
-				<div class="flex flex-col md:flex-row w-full rounded-xl overflow-hidden border-slate-200 border-[.5px]">
-					<div class="relative w-2/5">
-						<img src="" alt="" class="w-full h-[250px] bg-black" />
-						<span class="absolute top-1 left-1 text-white text-xl bg-slate-400 rounded-lg px-4">
-							P&C
-						</span>
-					</div>
-					<p class="p-8 w-3/5 font-bold text-2xl flex items-center">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					</p>
-				</div>
-			</section>
+			<Services /> 
 				
 			</section>
 		</main>
