@@ -1,0 +1,33 @@
+---
+import '../styles/global.css';
+// Component Imports
+import Button from '../components/Button.astro';
+import BusinessLineCard from '@/components/BusinessLineCard.astro';
+import NavBar from '@/components/layout/NavBar.astro';
+import BentoItem from '@/components/BentoItem.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Services from '@/components/services.tsx';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Capital Consultorias SAS</title>
+	</head>
+
+	<body>
+		<NavBar />
+		<main class="container mx-auto">
+            <form action="api/send">
+             <button>Enviar</button>
+            </form>
+		</main>
+		<Footer />
+	</body>
+</html>
