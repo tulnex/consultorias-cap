@@ -1,0 +1,58 @@
+---
+import '../styles/global.css';
+// Component Imports
+import Button from '../components/Button.astro';
+import BusinessLineCard from '@/components/BusinessLineCard.astro';
+import NavBar from '@/components/layout/NavBar.astro';
+import BentoItem from '@/components/BentoItem.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Services from '@/components/services.tsx';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Capital Consultorias SAS</title>
+	</head>
+
+	<body>
+		<NavBar />
+		<main class="container mx-auto">
+			<section class="flex flex-col gap-16 lg:gap-20 items-center py-12 lg:pt-24 lg:pb-28">
+				<section class="flex flex-col w-4/5 gap-24">
+					<h2 class="text-4xl font-bold lg:text-7xl">
+						Nuestros servicios
+					</h2>
+					<div class="flex flex-wrap justify-between gap-24 w-full">
+						<img
+							class="flex-1 aspect-video bg-slate-400 rounded-lg"
+							src="/hjksdhfj.png"
+							alt=""
+						/>
+						<div class="w-full md:w-[40%] flex flex-col gap-16">
+							<h3 class="text-6xl font-bold">
+								lorem ipsum dolor sit amet
+							</h3>
+							<p class="text-lg font-bold">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aspernatur beatae similique repellat numquam animi dolorem ex accusamus, provident quidem reiciendis atque officiis facere rem quaerat. Dolore ex mollitia vitae!
+							</p>
+							<a href="/contacto" class="text-white font-extrabold bg-[#7d4a6b] border border-[#7d4a6b] transition-all duration-500 hover:bg-white hover:text-[#7d4a6b] px-4 p-2 w-fit rounded-2xl">
+								Contactanos!
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<Services client:load /> 
+				
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
