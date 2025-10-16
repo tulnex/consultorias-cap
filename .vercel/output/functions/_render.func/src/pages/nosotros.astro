@@ -1,1 +1,32 @@
-<p>hola mundo</p>                                               
+---
+import '../styles/global.css';
+import NavBar from '@/components/layout/NavBar.astro';
+import Footer from '@/components/layout/Footer.astro';
+---
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Nosotros - Capital Consultorías SAS">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="generator" content={Astro.generator}>
+    <title>Nosotros - Capital Consultorías SAS</title>
+</head>
+<body>
+    <NavBar />
+    
+    <main class="bg-slate-800 text-white min-h-screen">
+        <div class="container mx-auto px-4 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-8">Nosotros</h1>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Esta página está en construcción. Próximamente tendrás información completa sobre nuestro equipo y nuestra empresa.
+                </p>
+            </div>
+        </div>
+    </main>
+    
+    <Footer />
+</body>
+</html>
