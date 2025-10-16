@@ -2,11 +2,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".vercel/output",
   "framework": "astro",
-  "functions": {
-    ".vercel/output/functions/_render.func": {
-      "maxDuration": 30
-    }
-  },
   "headers": [
     {
       "source": "/api/(.*)",
