@@ -1,0 +1,58 @@
+---
+import '../styles/global.css';
+// Component Imports
+import Button from '../components/Button.astro';
+import BusinessLineCard from '@/components/BusinessLineCard.astro';
+import NavBar from '@/components/layout/NavBar.astro';
+import BentoItem from '@/components/BentoItem.astro';
+import Footer from '@/components/layout/Footer.astro';
+import Services from '@/components/services.tsx';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Nuestras Soluciones - Capital Consultorías SAS</title>
+	</head>
+
+	<body>
+		<NavBar />
+		<main class="container mx-auto">
+			<section class="flex flex-col gap-16 lg:gap-20 items-center py-12 lg:pt-24 lg:pb-28">
+				<section class="flex flex-col w-4/5 gap-24">
+					<h2 class="text-4xl font-bold lg:text-7xl">
+						Nuestras Soluciones
+					</h2>
+					<div class="flex flex-wrap justify-between gap-24 w-full">
+						<img
+							class="w-full max-w-md aspect-video bg-slate-400 rounded-lg object-cover"
+							src="/equipodetrabajoperspectivaarriba.jpg"
+							alt="Equipo de Capital Consultoría trabajando en soluciones empresariales"
+						/>
+						<div class="w-full md:w-[40%] flex flex-col gap-16">
+							<h3 class="text-6xl font-bold">
+								Soluciones que Transforman Empresas
+							</h3>
+							<p class="text-lg font-bold">
+								En Capital Consultoría SAS desarrollamos soluciones empresariales personalizadas que revolucionan procesos, optimizan recursos y generan resultados medibles. Nuestro enfoque integral combina experiencia técnica con innovación para impulsar el crecimiento sostenible de su organización.
+							</p>
+							<a href="/contacto" class="text-white font-extrabold bg-[#7d4a6b] border border-[#7d4a6b] transition-all duration-500 hover:bg-white hover:text-[#7d4a6b] px-4 p-2 w-fit rounded-2xl">
+								¡Solicitar Consulta!
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<Services client:load /> 
+				
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

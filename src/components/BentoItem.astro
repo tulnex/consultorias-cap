@@ -1,7 +1,9 @@
 ---
-const { class: className } = Astro.props;
+const { class: className, backgroundImage } = Astro.props;
 ---
 
-<article class=`rounded-lg bg-slate-400 border-border p-4 text-background md:h-[25vh] lg:h-[35vh] ${className}`>
-    <slot />
+<article class={`rounded-lg border-border p-4 text-background md:h-[25vh] lg:h-[35vh] ${className} ${backgroundImage ? 'bg-cover bg-center bg-no-repeat' : 'bg-slate-400'}`} style={backgroundImage ? `background-image: url('${backgroundImage}')` : ''}>
+    <div class={backgroundImage ? 'bg-black/30 rounded-lg p-4 h-full flex flex-col justify-between' : ''}>
+        <slot />
+    </div>
 </article>

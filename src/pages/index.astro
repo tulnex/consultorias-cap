@@ -25,55 +25,91 @@ import Footer from '@/components/layout/Footer.astro';
 		<main class="container mx-auto">
 			<section class="flex flex-col gap-16 lg:gap-20 items-center py-12 lg:pt-48 lg:pb-28">
 				<div class="flex flex-col gap-4 items-center w-4/5 lg:w-2/3">
-					<h2 class="text-xl md:text-5xl lg:text-6xl font-bold text-center">Aseguradora Numero 1 de Colombia en seguros todo riesgo.</h2>
-					<span class="text-slate-400 text-lg">Ayudando a las personas a tener un mejor servicio para su tranquilidad</span>
+					<h2 class="text-xl md:text-5xl lg:text-6xl font-bold text-center">Capital Consultoría SAS</h2>
+					<span class="text-slate-400 text-lg">Transformando empresas con tecnología avanzada y atención personalizada</span>
 				</div>
 				<section class="w-full flex flex-col gap-4 lg:gap-10">
 					<div class="flex flex-row gap-4 lg:gap-10">
-						<BentoItem class="flex-2">
-							contenido uno
+						<BentoItem class="flex-2" backgroundImage="/panoramido partida AUTOS.jpg">
+							<div class="h-full flex flex-col justify-between">
+								<div>
+									<h3 class="text-2xl font-bold mb-4 text-white">Gestión de Reclamaciones</h3>
+									<p class="text-lg mb-6 text-white">Resolver sus siniestros con rapidez utilizando la tecnología más avanzada y la atención que cuenta.</p>
+									<div class="space-y-2 mb-6">
+										<p class="text-sm text-white">• Indemnización de los trabajadores</p>
+										<p class="text-sm text-white">• Responsabilidad civil general</p>
+										<p class="text-sm text-white">• Responsabilidad civil del automóvil</p>
+									</div>
+								</div>
+								<button class="bg-white text-black px-4 py-2 rounded-lg font-semibold w-fit">Ver más</button>
+							</div>
 						</BentoItem>
-						<BentoItem class="flex-1">
-							contenido dos
+						<BentoItem class="flex-1" backgroundImage="/pexels-fauxels-3184292.jpg">
+							<div class="h-full flex flex-col justify-between">
+								<div>
+									<h3 class="text-2xl font-bold mb-4 text-white">Transformación con Tecnología</h3>
+								</div>
+								<button class="bg-white text-black px-4 py-2 rounded-lg font-semibold w-fit">Ver más</button>
+							</div>
 						</BentoItem>
 					</div>
 					<div class="flex flex-row gap-4 lg:gap-10">
-						<BentoItem class="flex-1">
-							contenido tres
+						<BentoItem class="flex-1" backgroundImage="/revision automoviles.jpg">
+							<div class="h-full flex flex-col justify-between">
+								<div>
+									<h3 class="text-xl font-bold mb-3 text-white">Ajuste de Pérdidas</h3>
+									<p class="text-sm mb-4 text-white">Todo tipo de siniestros, desde los cotidianos hasta los catastróficos.</p>
+								</div>
+								<button class="bg-white text-black px-3 py-2 rounded-lg font-semibold w-fit text-sm">Ver más</button>
+							</div>
 						</BentoItem>
-						<BentoItem class="flex-1">
-							contenido cuatro
+						<BentoItem class="flex-1" backgroundImage="/doctor con planilla.jpg">
+							<div class="h-full flex flex-col justify-between">
+								<div>
+									<h3 class="text-xl font-bold mb-3 text-white">Administración de las Prestaciones</h3>
+									<p class="text-sm mb-4 text-white">Simplificar la complejidad de las ausencias para lograr el cumplimiento de las normas, menos estrés y experiencias más positivas.</p>
+								</div>
+								<button class="bg-white text-black px-3 py-2 rounded-lg font-semibold w-fit text-sm">Ver más</button>
+							</div>
 						</BentoItem>
-						<BentoItem class="flex-1">
-							contenido cinco
+						<BentoItem class="flex-1" backgroundImage="/documentos sin humanos.jpg">
+							<div class="h-full flex flex-col justify-between">
+								<div>
+									<h3 class="text-xl font-bold mb-3 text-white">Retirada de Productos</h3>
+									<p class="text-sm mb-4 text-white">Preparación para cualquier evento del mercado, en cualquier sector.</p>
+								</div>
+								<button class="bg-white text-black px-3 py-2 rounded-lg font-semibold w-fit text-sm">Ver más</button>
+							</div>
 						</BentoItem>
 					</div>
 				</section>
 			</section>
 			
 			<div class="container mx-auto flex-col flex justify-center items-center my-8 gap-16">
-				<h3 class="text-6xl font-bold text-center">Lineas de Negocio</h3>
+				<h3 class="text-6xl font-bold text-center">Nuestros Servicios</h3>
 				<div class="container mx-auto flex flex-wrap justify-center gap-24 md:flex-nowrap">
-					<BusinessLineCard title="Automoviles" imageSrc="/images/line1.png" href="#" alt="linea 1" description="linea 1 description" />
-					<BusinessLineCard title="Vida" imageSrc="/images/line2.png" href="#" alt="linea 2" description="linea 2 description" />
-					<BusinessLineCard title="P&C" imageSrc="/images/line3.png" href="#" alt="linea 3" description="linea 3 description" />
+					<BusinessLineCard title="Consultoría Empresarial" imageSrc="/reunion completa.jpg" href="/nuestros-servicios" alt="Consultoría empresarial" description="Transformamos su empresa con estrategias innovadoras y tecnología de vanguardia" />
+					<BusinessLineCard title="Gestión de Riesgos" imageSrc="/hombre analisando.jpg" href="/nuestros-servicios" alt="Gestión de riesgos" description="Protegemos su negocio con análisis avanzados y soluciones personalizadas" />
+					<BusinessLineCard title="Transformación Digital" imageSrc="/zoom manos y teclado.jpg" href="/nuestros-servicios" alt="Transformación digital" description="Modernizamos sus procesos con las mejores herramientas tecnológicas" />
 				</div>
 			</div>
-			<div class="container mx-auto flex flex-wrap justify-center items-center my-28 gap-16">
-				<div class="flex-1 flex flex-col lg:gap-16">
-					<h2 class="text-3xl lg:text-6xl font-bold">Contacto</h2>
-					<p class="text-lg lg:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo porro explicabo vitae unde laboriosam asperiores atque, quis commodi, vero exercitationem a hic rem illum dolor doloremque. Consequuntur ducimus neque ratione?</p>
-					<a href="/contacto" class="text-[#7d4a6b] font-extrabold bg-white border border-[#7d4a6b] transition-all duration-500 hover:bg-[#7d4a6b] hover:text-white px-4 p-2 w-fit rounded-2xl">Contactanos!</a>
+			<div class="container mx-auto flex flex-col lg:flex-row justify-center items-center my-28 gap-16 px-4">
+				<div class="flex-1 flex flex-col lg:gap-16 max-w-2xl">
+					<h2 class="text-3xl lg:text-6xl font-bold">¿Listo para Transformar su Empresa?</h2>
+					<p class="text-lg lg:text-xl">En Capital Consultoría SAS combinamos experiencia empresarial con tecnología de vanguardia para ofrecer soluciones personalizadas que impulsan el crecimiento y la eficiencia de su negocio.</p>
+					<a href="/contacto" class="text-[#7d4a6b] font-extrabold bg-white border border-[#7d4a6b] transition-all duration-500 hover:bg-[#7d4a6b] hover:text-white px-6 py-3 w-fit rounded-2xl text-lg">¡Contáctanos!</a>
 				</div>
-				<img src="/images/contact.png" alt="contact" class="w-200 lg:w-[600px] aspect-video rounded-lg bg-slate-400" />
+				<div class="flex-1 flex justify-center lg:justify-end">
+					<img src="/equipodetrabajoperspectivaarriba.jpg" alt="Equipo de consultoría trabajando" class="w-full max-w-lg lg:max-w-xl xl:max-w-2xl aspect-[4/3] object-cover rounded-xl shadow-lg" />
+				</div>
 			</div>
 			<div class="container mx-auto flex flex-wrap justify-center items-center my-28 gap-16">
 				<div class="flex-1 flex flex-col lg:gap-8 items-center lg:max-w-3/5">
-					<h2 class="text-3xl lg:text-6xl font-bold text-center">Contacto</h2>
-					<p class="text-lg lg:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo porro explicabo vitae unde laboriosam asperiores atque, quis commodi, vero exercitationem a hic rem illum dolor doloremque. Consequuntur ducimus neque ratione?</p>
+					<h2 class="text-3xl lg:text-6xl font-bold text-center">Comience su Transformación</h2>
+					<p class="text-lg lg:text-xl text-center">Descubra cómo nuestros expertos pueden ayudarle a optimizar sus procesos, reducir costos y aumentar la eficiencia de su empresa. Conozca nuestro enfoque metodológico y comience su camino hacia la excelencia empresarial.</p>
 					<div class="flex flex-row gap-4 lg:gap-10">
 						<a href="/proceso" class="text-[#7d4a6b] font-extrabold bg-white border border-[#7d4a6b] transition-all duration-500 hover:bg-[#7d4a6b] hover:text-white px-4 p-2 w-fit rounded-2xl">Conoce el proceso</a>
-						<a href="/contacto" class="text-white font-extrabold bg-[#7d4a6b] border border-[#7d4a6b] transition-all duration-500 hover:bg-white hover:text-[#7d4a6b] px-4 p-2 w-fit rounded-2xl">Contactanos!</a>
+						<a href="/contacto" class="text-white font-extrabold bg-[#7d4a6b] border border-[#7d4a6b] transition-all duration-500 hover:bg-white hover:text-[#7d4a6b] px-4 p-2 w-fit rounded-2xl">¡Contáctanos!</a>
 					</div>
 				</div>
 			</div>

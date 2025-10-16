@@ -7,7 +7,7 @@ import NavBar from '@/components/layout/NavBar.astro';
 import BentoItem from '@/components/BentoItem.astro';
 import Footer from '@/components/layout/Footer.astro';
 import Services from '@/components/services.tsx';
-import Step from '@/components/step.astro';
+import Step from '@/components/Step.astro';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
@@ -19,49 +19,82 @@ import Step from '@/components/step.astro';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Capital Consultorias SAS</title>
+		<title>Nuestro Proceso - Capital Consultorías SAS</title>
 	</head>
 
 	<body>
 		<NavBar />
 		<main class="container mx-auto">
-			<section class="py-20 flex flex-col gap-20">
+			<section class="py-20 flex flex-col gap-20 px-4">
                 <div class="flex flex-col gap-4 items-center">
-                    <h2 class="text-sm font-bold">Conoce el proceso</h2>
-                    <h3 class="text-6xl font-bold w-4/5 text-center">Lorem Ipsum Dolor Sit Amet</h3>
-                    <p class="text-2xl text-center w-4/5 text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aspernatur beatae similique repellat numquam animi dolorem ex accusamus, provident quidem reiciendis atque officiis facere rem quaerat. Dolore ex mollitia vitae!</p>
+                    <h2 class="text-sm font-bold text-[#7d4a6b] uppercase tracking-wider">Nuestro Proceso</h2>
+                    <h3 class="text-4xl md:text-6xl font-bold w-4/5 text-center">Metodología Probada para el Éxito Empresarial</h3>
+                    <p class="text-lg md:text-2xl text-center w-4/5 text-slate-400">En Capital Consultoría SAS seguimos un proceso estructurado y comprobado que garantiza resultados excepcionales. Nuestra metodología combina análisis profundo, estrategia personalizada y implementación eficiente para transformar su empresa.</p>
                 </div>
-                <div class="flex flex-row gap-4 lg:gap-10 w-4/5 mx-auto">
-                    <BentoItem class="flex-2">
-                        contenido uno
+                <div class="flex flex-col lg:flex-row gap-4 lg:gap-10 w-4/5 mx-auto">
+                    <BentoItem class="flex-2" backgroundImage="/equipodetrabajoperspectivaarriba.jpg">
+                        <div class="h-full flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4 text-white">Análisis Integral</h3>
+                                <p class="text-lg mb-6 text-white">Realizamos un diagnóstico completo de su empresa, identificando oportunidades de mejora y áreas de crecimiento potencial.</p>
+                                <div class="space-y-2 mb-6">
+                                    <p class="text-sm text-white">• Evaluación de procesos actuales</p>
+                                    <p class="text-sm text-white">• Análisis de eficiencia operativa</p>
+                                    <p class="text-sm text-white">• Identificación de cuellos de botella</p>
+                                </div>
+                            </div>
+                            <button class="bg-white text-black px-4 py-2 rounded-lg font-semibold w-fit">Ver más</button>
+                        </div>
                     </BentoItem>
-                    <BentoItem class="flex-1">
-                        contenido dos
+                    <BentoItem class="flex-1" backgroundImage="/personas hablando.jpg">
+                        <div class="h-full flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold mb-3 text-white">Consultoría Personalizada</h3>
+                                <p class="text-sm mb-4 text-white">Trabajamos directamente con su equipo para desarrollar soluciones adaptadas a sus necesidades específicas.</p>
+                            </div>
+                            <button class="bg-white text-black px-3 py-2 rounded-lg font-semibold w-fit text-sm">Ver más</button>
+                        </div>
                     </BentoItem>
                 </div>
             </section>
-            <section class="py-20 flex flex-col gap-20">
+            <section class="py-20 flex flex-col gap-20 px-4">
                 <div class="flex flex-col gap-4 items-center">
-                    <h3 class="text-6xl font-bold w-3/5 text-center">Lorem Ipsum Dolor Sit Amet</h3>
-                    <p class="text-2xl text-center w-3/5 text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aspernatur beatae similique repellat numquam animi dolorem ex accusamus, provident quidem reiciendis atque officiis facere rem quaerat. Dolore ex mollitia vitae!</p>
-                    <a href="/contacto" class="text-white font-extrabold bg-[#7d4a6b] border border-[#7d4a6b] transition-all duration-500 hover:bg-white hover:text-[#7d4a6b] px-4 p-2 w-fit rounded-2xl">Contactanos!</a>
+                    <h3 class="text-4xl md:text-6xl font-bold w-3/5 text-center">Nuestros 4 Pasos Hacia el Éxito</h3>
+                    <p class="text-lg md:text-2xl text-center w-3/5 text-slate-400">Cada proyecto sigue nuestra metodología probada de cuatro fases, diseñada para maximizar el impacto y garantizar resultados duraderos para su empresa.</p>
+                    <a href="/contacto" class="text-white font-extrabold bg-[#7d4a6b] border border-[#7d4a6b] transition-all duration-500 hover:bg-white hover:text-[#7d4a6b] px-6 py-3 w-fit rounded-2xl text-lg">¡Comencemos!</a>
                 </div>
-                <div class="grid grid-cols-1 gap-16 md:grid-cols-4">
-                    <Step step="1" title="Lorem ipsum dolor sit amet">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad autem doloremque amet, ipsam molestias odio earum debitis officia? Repudiandae deserunt voluptatem odio aliquid eligendi tempora quia deleniti, assumenda obcaecati quis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad autem doloremque amet, ipsam molestias odio earum debitis officia? Repudiandae deserunt voluptatem odio aliquid eligendi tempora quia deleniti, assumenda obcaecati quis.</p>
+                <div class="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-4">
+                    <Step step="1" title="Diagnóstico y Análisis">
+                        <p class="text-sm text-slate-600 mb-3">Realizamos una evaluación exhaustiva de su empresa, analizando procesos, estructura organizacional y oportunidades de mejora.</p>
+                        <ul class="text-xs text-slate-500 space-y-1">
+                            <li>• Auditoría de procesos</li>
+                            <li>• Análisis de eficiencia</li>
+                            <li>• Identificación de problemas</li>
+                        </ul>
                     </Step>
-                    <Step step="2" title="Lorem ipsum dolor sit amet">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad autem doloremque amet, ipsam molestias odio earum debitis officia? Repudiandae deserunt voluptatem odio aliquid eligendi tempora quia deleniti, assumenda obcaecati quis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad autem doloremque amet, ipsam molestias odio earum debitis officia? Repudiandae deserunt voluptatem odio aliquid eligendi tempora quia deleniti, assumenda obcaecati quis.</p>
+                    <Step step="2" title="Estrategia y Planificación">
+                        <p class="text-sm text-slate-600 mb-3">Desarrollamos una estrategia personalizada basada en nuestros hallazgos, con objetivos claros y métricas de éxito.</p>
+                        <ul class="text-xs text-slate-500 space-y-1">
+                            <li>• Definición de objetivos</li>
+                            <li>• Plan de implementación</li>
+                            <li>• Cronograma detallado</li>
+                        </ul>
                     </Step>
-                    <Step step="3" title="Lorem ipsum dolor sit amet">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad autem doloremque amet, ipsam molestias odio earum debitis officia? Repudiandae deserunt voluptatem odio aliquid eligendi tempora quia deleniti, assumenda obcaecati quis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad autem doloremque amet, ipsam molestias odio earum debitis officia? Repudiandae deserunt voluptatem odio aliquid eligendi tempora quia deleniti, assumenda obcaecati quis.</p>
+                    <Step step="3" title="Implementación">
+                        <p class="text-sm text-slate-600 mb-3">Ejecutamos las mejoras planificadas con acompañamiento continuo y ajustes según sea necesario.</p>
+                        <ul class="text-xs text-slate-500 space-y-1">
+                            <li>• Capacitación del equipo</li>
+                            <li>• Implementación gradual</li>
+                            <li>• Monitoreo constante</li>
+                        </ul>
                     </Step>
-                    <Step step="4" title="Lorem ipsum dolor sit amet">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad autem doloremque amet, ipsam molestias odio earum debitis officia? Repudiandae deserunt voluptatem odio aliquid eligendi tempora quia deleniti, assumenda obcaecati quis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad autem doloremque amet, ipsam molestias odio earum debitis officia? Repudiandae deserunt voluptatem odio aliquid eligendi tempora quia deleniti, assumenda obcaecati quis.</p>
+                    <Step step="4" title="Seguimiento y Optimización">
+                        <p class="text-sm text-slate-600 mb-3">Realizamos seguimiento continuo para asegurar la sostenibilidad de las mejoras y optimizar resultados.</p>
+                        <ul class="text-xs text-slate-500 space-y-1">
+                            <li>• Evaluación de resultados</li>
+                            <li>• Ajustes y mejoras</li>
+                            <li>• Soporte continuo</li>
+                        </ul>
                     </Step>
                 </div>
             </section>
